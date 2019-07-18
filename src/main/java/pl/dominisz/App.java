@@ -7,9 +7,11 @@ public class App {
     Shape circle = shapeFactory.getShape("circle");
     Shape square = shapeFactory.getShape("square");
     Shape rectangle = shapeFactory.getShape("rectangle");
+    Shape rectangle2 = shapeFactory.getShape("rectagle");
 
     circle.draw();
     square.draw();
     rectangle.draw();
+    rectangle2.draw();
   }
 }

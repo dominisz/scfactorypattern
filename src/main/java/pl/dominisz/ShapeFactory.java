@@ -4,7 +4,7 @@ public class ShapeFactory {
 
   public Shape getShape(String shapeType) {
     if (shapeType == null) {
-      return null;
+      return new NullShape();
     }
     if (shapeType.equalsIgnoreCase("RECTANGLE")) {
       return new Rectangle();
@@ -13,6 +13,6 @@ public class ShapeFactory {
     } else if (shapeType.equalsIgnoreCase("CIRCLE")) {
       return new Circle();
     }
-    return null;
+    return new NullShape();
   }
 }
