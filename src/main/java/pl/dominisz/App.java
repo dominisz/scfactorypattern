@@ -8,10 +8,12 @@ public class App {
     Shape square = shapeFactory.getShape("square");
     Shape rectangle = shapeFactory.getShape("rectangle");
     Shape rectangle2 = shapeFactory.getShape("rectagle");
+    Shape nullShape = shapeFactory.getShape(null);
 
     circle.draw();
     square.draw();
     rectangle.draw();
     rectangle2.draw();
+    nullShape.draw();
   }
 }
